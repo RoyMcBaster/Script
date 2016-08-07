@@ -1,0 +1,51 @@
+anthony@AnthonyBuild:~/nexus5$ ls
+arm-eabi-4.9  msm
+    
+anthony@AnthonyBuild:~/nexus5$ export PATH=$PATH:/usr/local/share/arm-eabi-4.9/bin
+anthony@AnthonyBuild:~/nexus5$ arm-eabi-gcc --version
+
+
+anthony@AnthonyBuild:~/nexus5/msm$ 
+
+anthony@AnthonyBuild:~/nexus5/msm$ export ARCH=arm
+anthony@AnthonyBuild:~/nexus5/msm$ export SUBARCH=arm
+anthony@AnthonyBuild:~/nexus5/msm$ export CROSS_COMPILE=arm-eabi-
+
+
+
+
+
+
+
+
+BFQ
+https://github.com/CyanogenMod/android_kernel_htc_msm8974/commit/126236c521384cd80c3b938124cd439adb29d76f
+
+https://github.com/CyanogenMod/android_kernel_htc_msm8974/commit/32a5efb10f3e9e8b28cf2226f9f6c280f382ebed
+
+https://github.com/CyanogenMod/android_kernel_htc_msm8974/commit/e2abce7b99cd30cb940c4f62b69d27663888bf55
+
+Please, update DEFCONFIG.
+
+
+
+
+
+
+
+
+
+CRC
+
+/drivers/mmc/core/core.c
+
+/*
+ * Enabling software CRCs on the data blocks can be a significant (30%)
+ * performance cost, and for other reasons may not always be desired.
+ * So we allow it it to be disabled.
+ */
+bool use_spi_crc = 1; ---> 0
+module_param(use_spi_crc, bool, 0); ---> 0644
+
+
+
