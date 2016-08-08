@@ -1,7 +1,7 @@
 anthony@AnthonyBuild:~/nexus5$ ls
 arm-eabi-4.9  msm
     
-anthony@AnthonyBuild:~/nexus5$ export PATH=$PATH:/usr/local/share/arm-eabi-4.9/bin
+anthony@AnthonyBuild:~/nexus5$ export PATH=$PATH:/home/anthony/nexus5/arm-eabi-4.9/bin
 anthony@AnthonyBuild:~/nexus5$ arm-eabi-gcc --version
 
 
