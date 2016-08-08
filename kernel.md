@@ -20,7 +20,7 @@ export CROSS_COMPILE=$(pwd)/arm-eabi-6.x/bin/arm-eabi-
 mkdir out
 cd kernel
 make ARCH=arm64 O=../out mrproper
-make ARCH=arm64 O=../out p9_extracted_defconfig
+make ARCH=arm64 O=../out hammerhead_defconfi
 make ARCH=arm64 O=../out -j8
 
 
