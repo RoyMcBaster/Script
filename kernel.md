@@ -31,7 +31,7 @@ cd kernel
 
  |-------------------------------------------------------|
  |							 |
- |	make ARCH=arm64 O=../out mrproper		 |	 |
+ |	make ARCH=arm64 O=../out mrproper		 |
  |	make ARCH=arm64 O=../out angler_defconfig	 |
  |	make ARCH=arm64 O=../out -j8			 |
  |							 |
